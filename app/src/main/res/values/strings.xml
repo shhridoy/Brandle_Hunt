@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Brandable Hunt</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_third">ThirdActivity</string>
+
+    <string name="grid_value1">Black T-shirt\nPrice: 450 tk\nSizes: M, L, XL, XXL</string>
+    <string name="grid_value2">Firebrick T-shirt\nPrice: 450 tk\nSizes: M, L, XL</string>
+    <string name="grid_value3">Blue T-shirt\nPrice: 300 tk\nSizes: M, L, XL, XXL</string>
+    <string name="grid_value4">Red T-shirt\nPrice: 400 tk\nSizes: M, L, XL, XXL</string>
+    <string name="grid_value5">Black_2 T-shirt\nPrice: 500 tk\nSizes: L, XL, XXL</string>
+    <string name="grid_value6">Purple T-shirt\nPrice: 390 tk\nSizes: M, L, XL, XXL</string>
+
+
+</resources>

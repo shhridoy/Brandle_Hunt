@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.shhridoy.brandablehunt.SecondActivity"
+    android:background="@color/colorPrimaryLight100"
+    tools:showIn="@layout/activity_second">
+
+    <TextView
+        android:id="@+id/TVCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Categories"
+        android:padding="5dp"
+        android:background="@color/colorPrimaryLight300"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/LLSecond"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/TVCategory"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/btnGents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="MEN"
+            android:background="@drawable/btn_unselected_bg"
+            tools:ignore="ButtonStyle"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btnLadies"
+            android:text="WOMEN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/btn_unselected_bg"
+            tools:ignore="ButtonStyle"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListViewSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LLSecond"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_third"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.shhridoy.brandablehunt.ThirdActivity"
+    tools:showIn="@layout/activity_third"
+    android:background="#D4D4D4">
+
+    <GridView
+        android:id="@+id/GridViewThird"
+        android:numColumns="2"
+        android:horizontalSpacing="1.5dp"
+        android:verticalSpacing="1.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </GridView>
+
+</RelativeLayout>
