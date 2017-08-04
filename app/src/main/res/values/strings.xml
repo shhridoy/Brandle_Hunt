@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Brandable Hunt</string>
+    <string name="app_name">Brandle Hunt</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_second">SecondActivity</string>
     <string name="title_activity_third">ThirdActivity</string>
@@ -103,11 +103,11 @@
 
     <string name="richman_tel_no">+8809140339</string>
 
-    <string name="richman_men_t_shirts_1">Mehanil Black Cotton Lalon T-Shirt For Men ৳ 250.00 M L XL XXL</string>
-    <string name="richman_men_t_shirts_2">Mehanil Pack Of 5 Cotton Magical Arrow T-Shirt For Men ৳ 999.00</string>
-    <string name="richman_men_t_shirts_3">Mehanil Pack Of 4 Multi Color Cotton Magical Arrow T-Shirt For Men ৳ 899.00</string>
-    <string name="richman_men_t_shirts_4">Mehanil White Cotton Magical Arrow T-Shirt For Men ৳ 250.00</string>
-    <string name="richman_men_t_shirts_5">Mehanil White Cotton Magical Arrow T-Shirt For Men ৳ 250.00</string>
+    <string name="richman_men_t_shirts_1">Black Cotton Lalon T-Shirt For Men ৳ 250.00 M L XL XXL</string>
+    <string name="richman_men_t_shirts_2">Pack Of 5 Cotton Magical Arrow T-Shirt For Men ৳ 999.00</string>
+    <string name="richman_men_t_shirts_3">Pack Of 4 Multi Color Cotton Magical Arrow T-Shirt For Men ৳ 899.00</string>
+    <string name="richman_men_t_shirts_4">White Cotton Magical Arrow T-Shirt For Men ৳ 250.00</string>
+    <string name="richman_men_t_shirts_5">White Cotton Magical Arrow T-Shirt For Men ৳ 250.00</string>
 
 
     <string name="richman_men_shirts_1">Navy Blue Cotton Shirt For Men -27%৳ 1,303.00 ৳ 1,790.00</string>
@@ -138,10 +138,10 @@
     <string name="richman_women_play_suits_6">Marque Executif Polyester Casual FB Jumpsuit - Black and White ৳ 4,000.00</string>
 
 
-    <string name="richman_women_jeans_1">Maks Mart 1 Piece Slim'n Lift Caresse Jeans For Ladies ৳ 1,499.00</string>
+    <string name="richman_women_jeans_1">Maks Mart 1 Piece Slim and Lift Caresse Jeans For Ladies ৳ 1,499.00</string>
     <string name="richman_women_jeans_2">Trekker Denim Casual Jeans - Mid Blue Faded ৳ 895.00</string>
     <string name="richman_women_jeans_3">Trekker Denim Casual Jeans - Mid Blue ৳ 895.00</string>
-    <string name="richman_women_jeans_4">Chifemagic Slim 'n Lift Caresse Jeans ৳ 990.00</string>
+    <string name="richman_women_jeans_4">Chifemagic Slim and Lift Caresse Jeans ৳ 990.00</string>
 
 
     <string name="yellow_tel_no">+8801754455533</string>
@@ -174,7 +174,7 @@
     <string name="yellow_women_kameej_3">LEPIDOLITE OFF WHITE Tk. 3,295</string>
     <string name="yellow_women_kameej_4">TURQOISE TRUTH FEROZI Tk. 3,495</string>
     <string name="yellow_women_kameej_5">FLORAL AZTECH PINK Tk. 3,295</string>
-    <string name="yellow_women_kameej_6">WOMEN'S ETHNIC TRAIL PEACOCK GREEN Tk. 3,490</string>
+    <string name="yellow_women_kameej_6">WOMEN,S ETHNIC TRAIL PEACOCK GREEN Tk. 3,490</string>
 
 
     <string name="yellow_women_sharee_1">YELLOW SAREE MULTI 210 Tk. 3,495</string>
@@ -187,10 +187,10 @@
 
     <string name="yellow_women_palazzo_skirts_1">MERMAID WITH TIER SKIRT OLIVE Tk. 1,995</string>
     <string name="yellow_women_palazzo_skirts_2">MERMAID WITH TIER SKIRT BLACK Tk. 1,995</string>
-    <string name="yellow_women_palazzo_skirts_3">WOMEN'S PALAZZO PEACH PRINTED Tk. 1,495</string>
-    <string name="yellow_women_palazzo_skirts_4">WOMEN'S PALAZZO OFF WHITE PRINTED Tk. 1,495</string>
-    <string name="yellow_women_palazzo_skirts_5">WOMEN'S PALAZZO LT GREEN PRINTED Tk. 1,495</string>
-    <string name="yellow_women_palazzo_skirts_6">WOMEN'S PALAZZO TURQUOISE PRINTED Tk. 1,595</string>
+    <string name="yellow_women_palazzo_skirts_3">WOMEN,S PALAZZO PEACH PRINTED Tk. 1,495</string>
+    <string name="yellow_women_palazzo_skirts_4">WOMEN,S PALAZZO OFF WHITE PRINTED Tk. 1,495</string>
+    <string name="yellow_women_palazzo_skirts_5">WOMEN,S PALAZZO LT GREEN PRINTED Tk. 1,495</string>
+    <string name="yellow_women_palazzo_skirts_6">WOMEN,S PALAZZO TURQUOISE PRINTED Tk. 1,595</string>
 
 
     <string name="dorji_bari_tel_no">01712784270</string>
