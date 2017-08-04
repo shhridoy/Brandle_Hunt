@@ -40,14 +40,41 @@ public class SecondActivity extends AppCompatActivity {
         btnGents = (Button) findViewById(R.id.btnGents);
         btnLadies = (Button) findViewById(R.id.btnLadies);
 
-        gentsItems = new String[]{
-                "Shirts", "T-Shirts", "Polo T-Shrit", "Jeans", "Panjabi", "Pants and Trousers"
-        };
+        switch (name)
+        {
+            case "Aarong":
+                gentsItems = new String[]{"Shirts", "T-Shirts", "Fatua", "Panjabi"};
+                ladiesItems = new String[]{"Sharee", "Kurta", "Kameez"};
+                break;
+            case "Catseye":
+                gentsItems = new String[]{"Shirts", "T-Shirts", "Pants"};
+                ladiesItems = new String[]{"Tops", "Western Tops"};
+                break;
+            case "Richman":
+                gentsItems = new String[]{"Shirts", "T-Shirts", "Jeans"};
+                ladiesItems = new String[]{"Tops", "Play Suits", "Jeans"};
+                break;
+            case "Yellow":
+                gentsItems = new String[]{"Shirts", "T-Shirts", "Panjabi"};
+                ladiesItems = new String[]{"Sharee", "Kameez", "Palazzo and Skirts"};
+                break;
+            case "Dorji Bari":
+                gentsItems = new String[]{"Shirts", "Pants", "Panjabi and Koti"};
+                ladiesItems = new String[]{};
+                break;
+            case "Lubnan":
+                gentsItems = new String[]{"Panjabi", "Sherwani", "Koti", "Pagri"};
+                ladiesItems = new String[]{};
+                break;
+            default:
+                gentsItems = new String[]{
+                        "Shirts", "T-Shirts", "Polo T-Shrit", "Jeans", "Panjabi", "Pants and Trousers"
+                };
 
-
-        ladiesItems = new String[]{
-                "Salwar Kameez", "Saree", "Kurtis and Tunics", "Hijab and Scarf", "Palazzo and Leggings", "T-Shirts"
-        };
+                ladiesItems = new String[]{
+                        "Salwar Kameez", "Saree", "Kurtis and Tunics", "Hijab and Scarf", "Palazzo and Leggings", "T-Shirts"
+                };
+        }
 
         adapter = new ArrayAdapter<String>(this, R.layout.list_item_catagories, R.id.TVGents, gentsItems);
         listView.setAdapter(adapter);
@@ -87,8 +114,8 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
-                intent.putExtra("Tag", adapterView.getItemAtPosition(i).toString());
-                intent.putExtra("Tag2", name);
+                intent.putExtra("Item", adapterView.getItemAtPosition(i).toString());
+                intent.putExtra("Brand", name);
                 startActivity(intent);
             }
         });

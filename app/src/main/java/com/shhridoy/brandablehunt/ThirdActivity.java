@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.GridView;
 
 import com.shhridoy.brandablehunt.myAdapters.GridViewAdapter;
-import com.shhridoy.brandablehunt.myAdapters.ListViewAdapter;
 import com.shhridoy.brandablehunt.myDataObject.Brand;
 
 import java.util.ArrayList;
@@ -23,24 +22,30 @@ public class ThirdActivity extends AppCompatActivity {
     GridViewAdapter adapter;
     ArrayList<Brand> arraylist = new ArrayList<Brand>();
     String[] name;
-    Integer[] icon;
-    String tag, tag2;
+    Integer[] image;
+    String item, brand;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-        tag = getIntent().getStringExtra("Tag");
-        tag2 = getIntent().getStringExtra("Tag2");
+        item = getIntent().getStringExtra("Item");
+        brand = getIntent().getStringExtra("Brand");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //noinspection ConstantConditions
-        getSupportActionBar().setTitle(tag2+" - "+tag);
+        getSupportActionBar().setTitle(brand +" - "+ item);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         gridView = (GridView) findViewById(R.id.GridViewThird);
+
+        if (brand.equals("Aarong")){
+            if (item.equals("Shirts")){
+
+            }
+        }
 
         name = new String[]{
                 getResources().getString(R.string.grid_value1), getResources().getString(R.string.grid_value2),
@@ -48,14 +53,14 @@ public class ThirdActivity extends AppCompatActivity {
                 getResources().getString(R.string.grid_value4), getResources().getString(R.string.grid_value6)
         };
 
-        icon = new Integer[] {
+        image = new Integer[] {
                 R.drawable.images, R.drawable.images1,
                 R.drawable.images2, R.drawable.images3,
                 R.drawable.images4, R.drawable.images5
         };
 
         for (int i=0; i<name.length; i++) {
-            Brand bnd = new Brand(icon[i], name[i]);
+            Brand bnd = new Brand(image[i], name[i]);
             arraylist.add(bnd);
         }
 
@@ -66,7 +71,7 @@ public class ThirdActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Calling to the "+tag2, Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Calling to the "+ brand, Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });

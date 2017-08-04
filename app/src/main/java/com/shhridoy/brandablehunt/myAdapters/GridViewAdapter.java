@@ -83,15 +83,6 @@ public class GridViewAdapter extends BaseAdapter{
 
             @Override
             public void onClick(View arg0) {
-                //Intent intent = new Intent(mContext, SecondActivity.class);
-                // Pass all data rank
-                //intent.putExtra("name", (itemList.get(position).getName()));
-                //intent.putExtra("KEY", "1");
-                // Pass all data flag
-                //intent.putExtra("icon", (itemList.get(position).getIcon()));
-                // Start SingleItemView Class
-                //mContext.startActivity(intent);
-                //Toast.makeText(mContext, itemList.get(position).getName(), Toast.LENGTH_LONG).show();
                 showDialog(itemList.get(position).getName(), itemList.get(position).getIcon());
             }
         });

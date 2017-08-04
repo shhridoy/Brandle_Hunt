@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.ListViewMain);
 
         name = new String[]{
-                "Aarong", "Catseye", "Richman", "Yellow", "Ecstasy", "Infinity",
+                "Aarong", "Catseye", "Richman", "Yellow", "Lubnan", "Ecstasy", "Infinity",
                 "Artisti", "Vasavi", "Dorji Bari", "Zatra", "Westics", "Kay kraft"
         };
 
         icon = new Integer[] {
-                R.drawable.aarong_logo, R.drawable.catseye_logo, R.drawable.richman_logg, R.drawable.yellow_logo,
+                R.drawable.aarong_logo, R.drawable.catseye_logo, R.drawable.richman_logg, R.drawable.yellow_logo, R.drawable.lubnan_logo,
                 R.drawable.ecstasy_logo, R.drawable.infinity_logo, R.drawable.artisti_logo, R.drawable.vasavi_logo,
                 R.drawable.dorji_bari_logo, R.drawable.jatra_logo, R.drawable.westics_logo, R.drawable.kaykraft_logo
         };

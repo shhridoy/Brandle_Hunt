@@ -80,12 +80,7 @@ public class ListViewAdapter extends BaseAdapter {
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(mContext, SecondActivity.class);
-                // Pass all data rank
                 intent.putExtra("name", (brandList.get(position).getName()));
-                //intent.putExtra("KEY", "1");
-                // Pass all data flag
-                //intent.putExtra("icon", (brandList.get(position).getIcon()));
-                // Start SingleItemView Class
                 mContext.startActivity(intent);
             }
         });
