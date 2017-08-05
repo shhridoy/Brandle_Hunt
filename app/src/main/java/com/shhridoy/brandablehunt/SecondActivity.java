@@ -52,7 +52,7 @@ public class SecondActivity extends AppCompatActivity {
                 break;
             case "Richman":
                 gentsItems = new String[]{"Shirts", "T-Shirts", "Jeans"};
-                ladiesItems = new String[]{"Tops", "Play Suits", "Jeans"};
+                ladiesItems = new String[]{"Tops", "Play Suits", "Ladies Jeans"};
                 break;
             case "Yellow":
                 gentsItems = new String[]{"Shirts", "T-Shirts", "Panjabi"};
