@@ -41,6 +41,8 @@ public class ThirdActivity extends AppCompatActivity {
 
         gridView = (GridView) findViewById(R.id.GridViewThird);
 
+        populatedGridView();
+
         for (int i=0; i<name.length; i++) {
             Brand bnd = new Brand(image[i], name[i]);
             arraylist.add(bnd);
