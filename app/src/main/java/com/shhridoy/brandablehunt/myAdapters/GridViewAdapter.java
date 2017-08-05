@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -94,10 +95,14 @@ public class GridViewAdapter extends BaseAdapter{
         myDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         myDialog.setContentView(R.layout.dialog_view);
 
-        ImageView img = (ImageView) myDialog.findViewById(R.id.ImageViewDialog);
+        //ImageView img = (ImageView) myDialog.findViewById(R.id.ImageViewDialog);
+        LinearLayout LLImage = (LinearLayout) myDialog.findViewById(R.id.LLDialogView);
         TextView tv = (TextView) myDialog.findViewById(R.id.TVDialog);
 
-        img.setImageResource(pic);
+        //img.setImageResource(pic);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            LLImage.setBackground(mContext.getResources().getDrawable(pic));
+        }
         tv.setText(text);
 
         myDialog.show();
