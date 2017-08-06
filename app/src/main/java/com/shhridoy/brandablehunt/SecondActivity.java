@@ -12,7 +12,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -46,26 +45,56 @@ public class SecondActivity extends AppCompatActivity {
                 gentsItems = new String[]{"Shirts", "T-Shirts", "Fatua", "Panjabi"};
                 ladiesItems = new String[]{"Sharee", "Kurta", "Kameez"};
                 break;
+
             case "Catseye":
+            case "Kay kraft":
                 gentsItems = new String[]{"Shirts", "T-Shirts", "Pants"};
                 ladiesItems = new String[]{"Tops", "Western Tops"};
                 break;
+
             case "Richman":
                 gentsItems = new String[]{"Shirts", "T-Shirts", "Jeans"};
-                ladiesItems = new String[]{"Tops", "Play Suits", "Ladies Jeans"};
+                ladiesItems = new String[]{};
+                //ladiesItems = new String[]{"Tops", "Play Suits", "Ladies Jeans"};
                 break;
+
             case "Yellow":
                 gentsItems = new String[]{"Shirts", "T-Shirts", "Panjabi"};
                 ladiesItems = new String[]{"Sharee", "Kameez", "Palazzo and Skirts"};
                 break;
+
             case "Dorji Bari":
                 gentsItems = new String[]{"Shirts", "Pants", "Panjabi and Koti"};
                 ladiesItems = new String[]{};
                 break;
+
             case "Lubnan":
                 gentsItems = new String[]{"Panjabi", "Sherwani", "Koti", "Pagri"};
                 ladiesItems = new String[]{};
                 break;
+
+            case "Ecstasy":
+            case "Westics":
+                gentsItems = new String[]{"Shirts", "Pants", "T-Shirts", "Panjabi"};
+                ladiesItems = new String[]{"Sharee", "Kurta", "Kameez", "Tops"};
+                break;
+
+            case "Infinity":
+                gentsItems = new String[]{"Shirts", "Pants", "Panjabi", "Koti"};
+                ladiesItems = new String[]{"Sharee", "Kurta", "Kameez"};
+                break;
+
+            case "Artisti":
+            case "Zatra":
+                gentsItems = new String[]{"Shirts", "Panjabi and Koti", "Jeans", "Fatua"};
+                ladiesItems = new String[]{"Sharee", "Western Tops", "Palazzo and Skirts"};
+                break;
+
+            case "Vasavi":
+                ladiesItems = new String[]{"Tops", "Play Suits", "Ladies Jeans"};
+                gentsItems = new String[]{};
+                break;
+
             default:
                 gentsItems = new String[]{
                         "Shirts", "T-Shirts", "Polo T-Shrit", "Jeans", "Panjabi", "Pants and Trousers"
@@ -137,7 +166,7 @@ public class SecondActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about) {
             return true;
         }
         if (id == android.R.id.home){

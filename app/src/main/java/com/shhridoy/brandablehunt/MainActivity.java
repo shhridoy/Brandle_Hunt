@@ -1,15 +1,18 @@
 package com.shhridoy.brandablehunt;
 
+import android.app.Dialog;
+import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.shhridoy.brandablehunt.myAdapters.ListViewAdapter;
 import com.shhridoy.brandablehunt.myDataObject.Brand;
@@ -69,7 +72,13 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about) {
+            Dialog myDialog = new Dialog(this);
+            myDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            myDialog.setContentView(R.layout.dialog_about);
+            TextView textView = (TextView) myDialog.findViewById(R.id.tvDevelperText2);
+            textView.setMovementMethod(LinkMovementMethod.getInstance());
+            myDialog.show();
             return true;
         }
         else if (id == R.id.menu_item_search){

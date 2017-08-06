@@ -232,6 +232,8 @@
     <string name="lubnan_men_koti_2">CODE - 20000146\nPRICE - 2090 TK</string>
     <string name="lubnan_men_koti_3">CODE - 20000146\nPRICE - 2090 TK</string>
     <string name="lubnan_men_koti_4">CODE - 37003914\nPRICE - 2390 TK</string>
+    <string name="about_text">This app contains few well known brands product of Bangladesh. I think this app will help people to choose their fashionable cloths among the different brands. This is a directory of cloths where you can find which you are prepare.</string>
 
+    <string name="gmail"><a href="mailto:md.saifulhq@gmail.com">md.saifulhq@gmail.com</a></string>
 
 </resources>
